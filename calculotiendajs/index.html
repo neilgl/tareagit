@@ -1,0 +1,214 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous"> 
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Tangerine">
+
+    <script src="scripts/script.js"></script>
+
+<style>
+  .titulo{
+    font-family: 'Tangerine', serif;
+    font size: 90px;
+  }
+</style>
+
+    <title>MiniMercado</title>
+  </head>
+
+  <body>
+
+    <div class="container border border-primary">
+    
+     <div class="row border border-success">
+        <div class="col-12 sm-9"> 
+    <div class="row border border-warning">
+      <div class="col-sm-4 border border-danger ">
+
+        <div class="text-center"> <img src="images/tienda.jpg" class="rounded-circle" style="width: 130px;" alt="tiendita"> </div> 
+
+      </div>
+      <div class="col-sm-4 border border-danger text-center font-italic font-weight-bold"> <div class="titulo"> MI TIENDA </div></div> 
+    
+      <div class="col-sm-4 border border-danger">
+      <div class="text-center"><i class="fas fa-cart-arrow-down fa-5x"></i> Carrito </div>
+      </div>
+    </div>
+
+
+<div class="row border border-success">
+
+      <div class="col-6 sm-6 border border-danger text-center"> <!--1era columna de productos-->
+        <div class="row"> <!--PAN--> 
+          <div class="col-sm-4"> <img src="images/pan.jpg" class="rounded" alt="pan" style="width: 50px;"> </div>
+          <div class="col-sm-4"> 
+
+            <div class="form-group">
+              <label for="usr">Pan:</label>
+              <input type="number" class="form-control" id="canpan">
+              <input type="hidden" id="valpan" value="500" >
+            </div>
+
+          </div>
+          <div class="col-sm-4"> $500 </div>
+        </div>
+
+          <div class="row"> <!--LECHE--> 
+            <div class="col-sm-4"> <img src="images/leche.jpeg" class="rounded" alt="leche" style="width: 40px;">  </div>
+            <div class="col-sm-4">
+
+              <div class="form-group">
+              <label for="usr">leche:</label>
+              <input type="number" class="form-control" id="canleche">
+              <input type="hidden" id="valleche" value="2000" >
+            </div>
+
+             </div>
+            <div class="col-sm-4"> $2000 </div>
+    </div>
+            <div class="row"> <!--HUEVOS-->
+            <div class="col-sm-4"> <img src="images/huevos.jpg" class="rounded" alt="huevos" style="width: 50px;">  </div>
+            <div class="col-sm-4"> 
+
+                <div class="form-group">
+                  <label for="usr">huevos:</label>
+                  <input type="number" class="form-control" id="canhuevos">
+                  <input type="hidden" id="valhuevos" value="300" >
+                </div>
+
+            </div>
+            <div class="col-sm-4"> $300 </div>
+            </div>
+      </div>
+  
+      <div class="col-6 sm-6 border border-danger text-center"> <!--2da columna de productos-->
+            <div class="row"> <!--JABON--> 
+              <div class="col-sm-4"> <img src="images/jabon.png" class="rounded" alt="jabon" style="width: 45px;"> </div>
+              <div class="col-sm-4"> 
+
+                  <div class="form-group">
+                    <label for="usr"> Jabón:</label>
+                    <input type="number" class="form-control" id="canjabon">
+                    <input type="hidden" id="valjabon" value="1500" >
+                  </div>
+              </div>
+              <div class="col-sm-4"> $1500</div>
+      </div>
+           <div class="row">  <!--SHAMPOO-->
+            <div class="col-sm-4"> <img src="images/shampoo.jpg" class="rounded" alt="shampoo" style="width: 30px; height: 60px;"> </div>
+            <div class="col-sm-4">
+
+              <div class="form-group">
+                <label for="usr"> Shampoo:</label>
+                <input type="number" class="form-control" id="canshampoo">
+                <input type="hidden" id="valshampoo" value="2500">
+              </div>
+
+            </div>
+            <div class="col-sm-4"> $2500</div>
+           </div>
+
+           <div class="row">  <!--CREMA DENTAL-->
+            <div class="col-sm-4"> <img src="images/crema.png" class="rounded" alt="crema" style="width: 50px;"> </div>
+            <div class="col-sm-4">
+
+                <div class="form-group">
+                  <label for="usr">Crema dental:</label>
+                  <input type="number" class="form-control" id="cancrema">
+                  <input type="hidden" id="valcrema" value="2000" >
+                </div>
+
+            </div>
+            <div class="col-sm-4"> $2000</div>
+           </div>
+
+         </div>
+      </div>
+
+  <div class="row border border-success">
+
+      <div class="col-6 sm-6"> <!--3era totales-->
+        <div class="row"> 
+
+           <div class="form-group">
+                  <label for="usr">SUBTOTAL:</label>
+                  <input type="text" class="form-control" id="sub1" disabled>
+                </div>
+        </div>
+
+        <div class="row"> 
+
+         <div class="form-group">
+                  <label for="usr">19% IVA:</label>
+                  <input type="text" class="form-control" id="iva1" disabled>
+                  <input type="hidden" id="valiva1" value="19">
+                </div>
+      </div>
+    </div>
+
+      <div class="col-6 sm-6"> <!--4ta totales-->
+        <div class="row">
+
+            <div class="form-group">
+                  <label for="usr">SUBTOTAL:</label>
+                  <input type="number" class="form-control" id="sub2" disabled>
+                </div>   
+      </div>
+
+      <div class="row"> 
+         <div class="form-group">
+                  <label for="usr">10% IVA:</label>
+                  <input type="number" class="form-control" id="iva2" disabled>
+                  <input type="hidden" id="valiva2" value="10">
+                </div> 
+              </div>
+
+    </div>
+  </div>
+
+        
+  <div class="row border border-success">
+
+      <div class="col-6 sm-6 border border-danger">  <!--boton factura-->
+
+        <div class="col-3 align-self-center text-center">
+        <button type="button" class="btn btn-primary" onclick="calcular();">CALCULAR</button>
+      </div>
+      </div>
+
+      <div class="col-6 sm-6 border border-danger"> <!--total todo-->
+
+         <div class="form-group">
+                  <label for="usr">SUBTOTAL:</label>
+                  <input type="number" class="form-control" id="subtotal" placeholder="00000" disabled >
+                </div> 
+
+                 <div class="form-group">
+                  <label for="usr">IVA:</label>
+                  <input type="number" class="form-control" id="iva" placeholder="00000" disabled="">
+                </div> 
+
+                 <div class="form-group">
+                  <label for="usr">TOTAL:</label>
+                  <input type="number" class="form-control" id="total" placeholder="00000" disabled>
+                </div> 
+
+      </div>
+  </div>
+
+  <div class="row border border-success">
+      <div class="col-12 sm-12 text-center font-weight-bold"> @mitienda.com
+      </div>
+
+
+  </div>
+</div>
+    </div>
+  </body>
+</html>
